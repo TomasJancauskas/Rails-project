@@ -5,7 +5,6 @@ class StaticPagesController < ApplicationController
 
   def help
     params[:active] = 'help'
-    @answer = params[:q]
   end
   
   def about
