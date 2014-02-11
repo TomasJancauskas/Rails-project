@@ -2,15 +2,15 @@
 <!-- Main jumbotron for a primary marketing message or call to action -->
 <div class="container theme-showcase" role="main">
 	<div class="col-sm-4">
-		<%= image_tag("bb.jpg", :class => "img-responsive") %>
+		<%= image_tag("bb.jpg", :class => "img-responsive", :style => "display: block; margin-left: auto; margin-right: auto;") %>
     </div>
-    <div class="col-sm-4" style = "text-align: center; vertical-align: middle; padding-top:40px;">
-    		<h1>easyMetrics</h1>
+    <div class="col-sm-4" style = "text-align: center; vertical-align: middle;">
+    		<h1 style = "text-align: center; vertical-align: middle">easyMetrics</h1>
     		<h4>Track various metrics of your repository </h4>
     		<h4>Monitor source code changes</h4>
     </div>	
     <div class="col-sm-4">
-    	<%= image_tag("gh.png", :class => "img-responsive") %>
+    	<%= image_tag("gh.png", :class => "img-responsive", :style => "display: block; margin-left: auto; margin-right: auto;") %>
     </div>
 </div>
 <%= render "footer" %>
