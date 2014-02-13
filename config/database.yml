@@ -6,7 +6,6 @@ development:
   pool: 5
   username: postgres
   password: postgres
-
 test:
   adapter: postgresql
   encoding: unicode
@@ -15,10 +14,12 @@ test:
   pool: 5
   username: postgres
   password: postgres
+
 production:
   adapter: postgresql
   encoding: unicode
   database: d8vdh66acpcjhb
+  port: 5432
   host: ec2-54-204-44-31.compute-1.amazonaws.com
   pool: 5
   username: ec2-54-204-44-31.compute-1.amazonaws.com
