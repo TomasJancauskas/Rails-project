@@ -15,3 +15,11 @@ test:
   pool: 5
   username: postgres
   password: postgres
+production:
+  adapter: postgresql
+  encoding: unicode
+  database: d8vdh66acpcjhb
+  host: ec2-54-204-44-31.compute-1.amazonaws.com
+  pool: 5
+  username: ec2-54-204-44-31.compute-1.amazonaws.com
+  password: JLAdrakdigKN9PFdMY64jpUq3l
