@@ -8,29 +8,28 @@
 				<div class="form-group">
 					<div class="input-group">
 						<span class="input-group-addon"><span class="glyphicon glyphicon-envelope"></span></span>
-						<%= f.email_field :email, :autofocus => true, :class => 'form-control', :placeholder => "Email" %>
+						<%= f.email_field :email, :autofocus => true, :class => 'form-control input-lg', :placeholder => "Email" %>
 					</div>
 				</div>
 
 				<div class="form-group">
 					<div class="input-group">
 						<span class="input-group-addon"><span class="glyphicon glyphicon-link"></span></span>
-
-						<%= f.password_field :password, :class => 'form-control', :placeholder => "Password" %>
+						<%= f.password_field :password, :class => 'form-control input-lg', :placeholder => "Password" %>
 					</div>
 				</div>
 				<div class="form-group">
 					<div class="input-group">
 						<span class="input-group-addon"><span class="glyphicon glyphicon-link"></span></span>
-						<%= f.password_field :password_confirmation, :class => 'form-control', :placeholder => "Confirm password" %>
+						<%= f.password_field :password_confirmation, :class => 'form-control input-lg', :placeholder => "Confirm password" %>
 					</div>
 				</div>
 
 				<div>
-					<%= f.submit "Sign up", :class => "btn btn-sm btn-success btn-block"%>
+					<%= f.submit "Sign up", :class => "btn btn-lg btn-success btn-block"%>
 				</div>
 				<div style = "padding-top: 10px">
-					<%= render "devise/shared/links" %>
+					<!--<%= render "devise/shared/links" %> -->
 				</div>
 
 				<% end %>
