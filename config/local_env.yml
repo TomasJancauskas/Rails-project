@@ -1,0 +1,5 @@
+# For example, setting:
+# GMAIL_USERNAME: 'Your_Gmail_Username'
+# makes 'Your_Gmail_Username' available as ENV["GMAIL_USERNAME"]
+GIT_APP_ID: '39a52dca165052c74fc9'
+GIT_APP_SECRET: '8c8796cffa58a2c9592dc5db37e539a2b9aafdd1'

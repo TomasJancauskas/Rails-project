@@ -18,14 +18,20 @@
 					<%= f.password_field :password, :class => "form-control input-lg", :placeholder => "Password" %>
 				</div>
 				<% if devise_mapping.rememberable? -%>
-				<div>
+				<div class= "checkbox">
 					<%= f.check_box :remember_me %> <%= f.label :remember_me %>
 				</div>
 				<% end -%>
 				<div class="form-group">
 					<%= f.submit "Sign in", :class => "btn btn-primary btn-lg btn-block"%>
 				</div>
+				<div class ="form-group">
+					<a class="btn btn-block btn-social btn-lg btn-github"><i class="fa fa-github"></i>Sign in with GitHub</a>
+				</div>
 				<% end %>
+				<div>
+					<%= link_to "Forgot your password?", new_password_path(resource_name) %>
+				</div>
 			</div>
 			<div class="modal-footer">
 				<div class="col-md-12">

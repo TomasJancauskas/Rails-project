@@ -1,21 +1,26 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title>RailsProject</title>
-  <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
-  <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
-  <%= csrf_meta_tags %>
-</head>
-<body>
-	<%= render "static_pages/nav" %>
+	<head>
+		<title>RailsProject</title>
+		<%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
+		<%= javascript_include_tag "application", "data-turbolinks-track" => true %>
+		<%= csrf_meta_tags %>
+	</head>
+	<body>
+		<%= render "static_pages/nav" %>
 
-<% if notice %>
-  <p class="alert alert-danger"><%= notice %></p>
-<% end %>
-<% if alert %>
-  <p class="alert alert-info"><%= alert %></p>
-<% end %>
+		<% if notice %>
+		<div id ="fade" class="col-md-4 col-md-offset-4 alert alert-danger">
+				<%= notice %>
+		</div>
+		<% end %>
+		<% if alert %>
+		<div id ="fade" class="col-md-4 col-md-offset-4 alert alert-info">
+				<%= alert %>
+		</div>
+		<% end %>
 
-<%= yield %>
-</body>
+		<%= yield %>
+		<%= render "static_pages/footer" %>
+	</body>
 </html>
