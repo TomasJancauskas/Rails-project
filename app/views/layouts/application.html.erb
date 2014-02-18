@@ -10,13 +10,15 @@
 		<%= render "static_pages/nav" %>
 
 		<% if notice %>
-		<div id ="fade" class="col-md-4 col-md-offset-4 alert alert-danger">
-				<%= notice %>
+		<div id ="fade" class="col-md-4 col-md-offset-4 alert alert-info" style = "display: inline-block !important;
+    vertical-align: middle !important;">
+				<p class ="text-center"><%= notice %> </p>
 		</div>
 		<% end %>
 		<% if alert %>
-		<div id ="fade" class="col-md-4 col-md-offset-4 alert alert-info">
-				<%= alert %>
+		<div id ="fade" class="col-md-4 col-md-offset-4 alert alert-danger" style = "display: inline-block !important;
+    vertical-align: middle !important;">
+				<p class ="text-center"><%= alert %> </p>
 		</div>
 		<% end %>
 
