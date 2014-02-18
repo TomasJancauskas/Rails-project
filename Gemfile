@@ -9,6 +9,7 @@ gem 'pg'
 gem 'devise'
 gem 'omniauth'
 gem 'omniauth-github'
+gem 'activerecord-session_store'
 
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.0.rc1'
