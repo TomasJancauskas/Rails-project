@@ -20,6 +20,10 @@
 				</li>
 
 			</ul>
+			<ul class="nav navbar-nav navbar-right">
+			<% if user_signed_in? %>
+				<li><a><%= "Hello, " + current_user.email %></a></li>
+			<%end%>
 			<% if user_signed_in? %>
 			<ul class="nav navbar-nav navbar-right">
 				<li>
