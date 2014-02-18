@@ -38,8 +38,7 @@ Rails.application.configure do
   :password             => ENV['MANDRILL_API_KEY'],
   :authentication       => 'plain',
   :enable_starttls_auto => true  }
-  
-      config.assets.enabled = true
+        config.assets.enabled = true
     config.before_configuration do
       env_file = File.join(Rails.root, 'config', 'local_env.yml')
       YAML.load(File.open(env_file)).each do |key, value|
