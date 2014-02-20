@@ -26,7 +26,9 @@
 					<%= f.submit "Sign in", :class => "btn btn-primary btn-lg btn-block"%>
 				</div>
 				<div class ="form-group">
-					<a class="btn btn-block btn-social btn-lg btn-github"><i class="fa fa-github"></i>Sign in with GitHub</a>
+					<%= link_to user_omniauth_authorize_path(:github), :class => 'btn btn-block btn-social btn-lg btn-github' do %>
+					<i class="fa fa-github"></i>Sign in with GitHub
+					<%end%>
 				</div>
 				<% end %>
 				<div>
