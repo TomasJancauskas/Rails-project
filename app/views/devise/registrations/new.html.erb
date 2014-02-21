@@ -28,11 +28,11 @@
 				<div class="form-group">
 					<div class="input-group">
 						<span class="input-group-addon"><span class="glyphicon glyphicon-link"></span></span>
-												<% if resource.errors.messages[:password_confirmation].to_s.length == 0 %>
+						<% if resource.errors.messages[:password_confirmation].to_s.length == 0 %>
 						<%= f.password_field :password_confirmation, :class => 'form-control input-lg', :placeholder => "Confirm password" %>
-												<%else%>
-																		<%= f.password_field :password_confirmation, :class => 'form-control input-lg alert-danger', :value => '', :placeholder => "Passwords do not match" %>
-																								<%end%>
+						<%else%>
+						<%= f.password_field :password_confirmation, :class => 'form-control input-lg alert-danger', :value => '', :placeholder => "Passwords do not match" %>
+						<%end%>
 					</div>
 				</div>
 
