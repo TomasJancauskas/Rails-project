@@ -1,8 +1,8 @@
 <div class = "container">
 	<div class = "row">
-		<h1>Dashboard#home</h1>
+		<h1>Playing with Octokit</h1>
 		<%= form_tag("/dashboard/search", method: "post") do %>
-		<%= label_tag(:q, "Search for:") %>
+		<%= label_tag(:q, "Enter github username:") %>
 		<%= text_field_tag(:q) %>
 		<%= submit_tag("Search") %>
 		<% end %>
