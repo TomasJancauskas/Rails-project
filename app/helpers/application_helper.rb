@@ -15,5 +15,4 @@ module ApplicationHelper
     return 'active' if request.fullpath == test_path
     ''
   end
-  
 end

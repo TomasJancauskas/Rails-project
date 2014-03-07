@@ -31,7 +31,7 @@
 				</li>
 				<%else%>
 				<ul class="nav navbar-nav navbar-right">
-					<li class="<%= current_class?('/users/sign_up')%>">
+					<li class="<%= current_class?('/users/sign_up')%> <%= current_class?('/users')%>">
 						<a href="/users/sign_up">Sign up</a>
 					</li>
 					<li class="<%= current_class?('/users/sign_in') %>">

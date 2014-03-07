@@ -1,7 +1,13 @@
 Rails.application.routes.draw do
 
+  get "dashboard/home"
+  
+  post "dashboard/search"
+
   devise_for :users, :controllers => { :omniauth_callbacks => "users/omniauth_callbacks" }
+  
   root :to => 'static_pages#home'
+  
   get "static_pages/home"
 
   get "static_pages/help"

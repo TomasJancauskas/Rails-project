@@ -12,7 +12,7 @@
 						<%- if !resource.errors.messages[:email] %>
 						<%= f.email_field :email, :autofocus => true, :class => 'form-control input-lg', :placeholder => "Email"  %>
 						<%else%>
-						<%= f.email_field :email, :autofocus => true, :class => 'form-control input-lg alert-danger', :value => '', :placeholder => "Email was" + resource.errors.messages[:email].join(" ")  %>
+						<%= f.email_field :email, :autofocus => true, :class => 'form-control input-lg alert-danger', :value => '', :placeholder => "Email " + resource.errors.messages[:email].join(" ")  %>
 						<% end%>
 					</div>
 				</div>
