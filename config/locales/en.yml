@@ -29,3 +29,6 @@ en:
             password:
               confirmation: "Password does not match"
               too_short: "Password is too short (min is 8)"
+    date:
+    formats:
+      default: "%Y-%m-%d" 

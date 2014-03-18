@@ -1,10 +1,28 @@
 <div class = "container">
 	<div class = "row">
-		<h1>Playing with Octokit</h1>
-		<%= form_tag("/dashboard/search", method: "post") do %>
-		<%= label_tag(:q, "Enter github username:") %>
-		<%= text_field_tag(:q) %>
-		<%= submit_tag("Search") %>
-		<% end %>
+		<div class="col-md-4 col-md-offset-4">
+			<%= form_tag("/dashboard/search", method: "post") do %>
+			<div class="form-group">
+				<%= label_tag(:user, "Github username:") %>
+				<%= text_field_tag :user, nil, :class => 'form-control', :placeholder => "Enter github username" %>
+			</div>
+			<div class="form-group">
+				<%= label_tag(:repo, "Repository name:") %>
+				<%= text_field_tag :repo , nil, :class => 'form-control', :placeholder => "Enter repository name" %>
+			</div>
+			<div class="form-group">
+				<%= label_tag(:branch, "Branch name:") %>
+				<%= text_field_tag :branch, nil, :class => 'form-control', :placeholder => "Enter branch name" %>
+			</div>
+			<div class="form-group">
+			<select name="days" id="days" class = "form-control">
+				<%= options_for_select([['Week', 7], ['Month', 30]]) %>
+			</select>
+			</div>
+			<div class="form-group">
+					<%= submit_tag "Search", :class => "btn btn-success btn-block" %>
+			</div>
+			<% end %>
+		</div>
 	</div>
 </div>
